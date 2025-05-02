@@ -75,7 +75,7 @@ backend.auth.resources.unauthenticatedUserIamRole.attachInlinePolicy(
   unauthPolicy,
 );
 
-const authPolicy = new Policy(backend.stack, "customBucketUnauthPolicy", {
+const authPolicy = new Policy(backend.stack, "customBucketAuthPolicy", {
   statements: [
     new PolicyStatement({
       effect: Effect.ALLOW,

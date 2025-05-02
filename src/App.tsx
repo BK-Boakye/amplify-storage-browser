@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getCurrentUser, signOut } from "aws-amplify/auth";
 import LandingPage from "./LandingPage";
 import { TENANT_ID, AMPLIFY_URL } from '../amplify-config'; 
+import { StorageBrowser } from "../components/Storage"; // 👈 import the component
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
@@ -41,6 +42,9 @@ function App() {
       <button onClick={() => signOut()}>
         Sign out
       </button>
+      <div style={{ marginTop: "2rem" }}>
+        <StorageBrowser /> {/* 👈 reference storage browser */}
+      </div>
     </main>
   ) : (
     <LandingPage />

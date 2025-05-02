@@ -7,7 +7,7 @@ function LandingPage() {
   };
 
   return (
-    <main>
+    <main style={styles.container}>
       <section style={styles.contentBox}>
         <h1 style={styles.heading}>Welcome to Cloud Storage Manager</h1>
         <p style={styles.paragraph}>

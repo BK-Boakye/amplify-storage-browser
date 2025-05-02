@@ -1,4 +1,3 @@
-import React from "react";
 import { signInWithRedirect } from "aws-amplify/auth";
 
 function LandingPage() {
@@ -7,7 +6,7 @@ function LandingPage() {
   };
 
   return (
-    <main style={styles.container}>
+    <main>
       <section style={styles.contentBox}>
         <h1 style={styles.heading}>Welcome to Cloud Storage Manager</h1>
         <p style={styles.paragraph}>
